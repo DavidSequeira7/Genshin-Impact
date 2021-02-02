@@ -1,0 +1,436 @@
+/* GENERAL */
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+main{
+	width: 100%;
+	height: 800px;
+	background-color:#1F32DB;
+	margin:0px;
+}
+
+header{
+	width: 100%;
+	height: 130px;
+	background-color:#202020;
+}
+
+footer{
+	width: 100%;
+	height: 220px;
+	background-color: #202020;
+	color:white;
+	
+}
+
+/* HEADER GENERAL */
+
+h1{
+	color:white;
+	letter-spacing: 2px;
+	font-size: 40px;
+	font-family: 'Andika New Basic', sans-serif;
+	text-align: center;
+
+}
+
+/* MENU DE NAVEGACION */
+
+ul{
+	list-style: none;
+	font-size: 15px;
+	padding: 0 300px;
+
+
+}
+
+nav li{
+	line-height: 2.5rem;
+	position: relative;
+} 
+
+nav li ul{
+	position: absolute;
+}
+nav a{
+	color: #ddd;
+	text-decoration: none;
+	padding: 0 3em;
+	display: block;
+	transition: .4s;
+}
+
+nav a:hover{
+	background: white;
+}
+
+
+nav ul ul{
+}	
+
+nav > ul{ 
+	background: #333;
+	direction: table;
+	
+ }
+nav > ul > li{
+	float: left;
+}
+
+nav li li{
+	background: #333;
+	left: 100%;
+}
+
+
+/* INDEX: BOX MODEL */
+
+.titulo{
+	color: white;
+	font-size: 50px;
+	font-family: 'Andika New Basic', sans-serif;
+	font-weight:bold;
+	text-align: center;
+	line-height:1.5;
+}
+
+.blanco{
+	color: white;
+	font-size: 20px;
+	font-family: 'Andika New Basic', sans-serif;
+	font-weight:bold;
+	text-align: center;
+	line-height:1.2;
+	
+}
+
+.rojo{
+	color: red;
+	font-family: 'Andika New Basic', sans-serif;
+	font-size: 25px;
+	background-size:50px;
+	background-position: center;
+	letter-spacing:4px;
+	font-weight:bold;
+	text-align: center;
+
+}
+
+.rosa{
+	color: pink;
+	
+}
+
+.videoinicio{
+	padding-top: 50px;
+	padding-left: 30%;
+
+}
+
+.main1{
+	background-image:url("fondos/teivat.jpg");
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-size: cover;
+	font-style: 20px;
+
+}
+
+/* FOOTER GENERAL */
+
+.container-full{
+	width: 100%;
+	margin:auto;
+	padding: 15px;
+
+}
+
+.container-body{
+	display: flex;
+
+}
+
+.colum1{
+	max-width: 900px
+
+}
+
+.colum1 h2{
+	font-size: 22px;
+}
+
+.colum1 label{
+	font-size: 16px;
+	color: #c7c7c7;
+}
+
+.colum2{
+	max-width: 300px;
+}
+
+.colum2 h2{
+	font-size: 22px;
+}
+
+.colum2 .fila{
+	margin-top: 5px;
+	display: flex;
+}
+
+.colum2 label{
+	font-size: 16px;
+	color: #c7c7c7;
+}
+
+
+.fila img{
+	width: 27px;
+	height: 27px;
+}
+
+.fila label{
+	margin-left: 10px;
+}
+
+.colum3{
+	max-width: 100px;
+}
+
+.colum3 h2{
+	font-size: 22px;
+}
+
+.colum3 img{
+	width: 300px;
+	height: 100px;
+	margin-top: 30px;
+	margin-left: 70px;
+}
+
+.container-footer{
+	width: 1499px;
+	height: 20px;
+	background: #101010;
+	display: flex;
+	padding: 10px;
+	justify-content: space-between;
+
+}
+
+.copyright{
+	color: #c7c7c7;
+	margin-left: 15px;
+}
+
+.terminos{
+	color: #c7c7c7;
+	margin-right: 15px;
+}
+
+
+
+
+/* ARMAS: FLEX-BOX */
+
+
+
+.flexbox{
+	width: 100%;
+	height: 150px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.foto{
+	width: 30%;
+	height: 50px;
+
+	
+}
+
+.arma{
+	width: 30%;
+	height: 50px;
+	color: white;
+	font-size: 25px;
+	font-family: 'Andika New Basic', sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+.desc{
+	width: 30%;
+	height: 125px;
+	color: white;
+	font-size: 15px;
+	font-family: 'Andika New Basic', sans-serif;
+	font-weight: bold;
+	
+
+}
+
+
+
+/* ARTEFACTOS: GRID */
+
+.artef{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 80px 80px 80px;
+
+	grid-template-areas: 
+						 "izquierda1 centro1 derecha1"
+						 "izquierda2 centro2 derecha2"
+						 "izquierda3 centro3 derecha3";
+						 
+	grid-row-gap: 10px;
+	background-color: #1F32DB;
+	grid-gap: 20px;
+	
+
+
+}
+
+.titulo1{
+	grid-area: izquierda1;
+	color: white;
+	font-family: 'Andika New Basic', sans-serif;
+	background-size:20px;
+	text-align: center;
+
+}
+
+.titulo2{
+	grid-area: centro1;
+	color: white;
+	font-family: 'Andika New Basic', sans-serif;
+	background-size:20px;
+	text-align: center;
+
+}
+
+
+.titulo3{
+	grid-area: derecha1;
+	color: white;
+	font-family: 'Andika New Basic', sans-serif;
+	background-size:20px;
+	text-align: center;
+
+}
+
+.set1{
+	grid-area: izquierda2;
+	color: white;
+	font-family: 'Andika New Basic', sans-serif;
+	background-size:10px;
+	text-align: center;
+
+}
+
+.set11{
+	grid-area: centro2;
+	color: white;
+	font-family: 'Andika New Basic', sans-serif;
+	background-size:10px;
+	text-align: center;
+}
+
+.set12{
+	grid-area: derecha2;
+	color: white;
+	font-family: 'Andika New Basic', sans-serif;
+	background-size:10px;
+	text-align: center;
+}
+
+.set2{
+	grid-area: izquierda3;
+	color: white;
+	font-family: 'Andika New Basic', sans-serif;
+	background-size:10px;
+	text-align: center;
+
+}
+
+.set21{
+	grid-area: centro3;
+	color: white;
+	font-family: 'Andika New Basic', sans-serif;
+	background-size:10px;
+	text-align: center;
+}
+
+.set22{
+	grid-area: derecha3;
+	color: white;
+	font-family: 'Andika New Basic', sans-serif;
+	background-size:10px;
+	text-align: center;
+}
+
+
+
+
+/* Personajes */
+
+.carrusel{
+	width: 600px;
+	height: 1200px;
+	display: grid;
+	grid-template-rows: 200px;
+	grid-template-columns: 80% 80% 80% 80% 80%;
+	animation: carrusel 10s infinite;
+	position: relative;
+	overflow-wrap: hidden;
+}
+
+@keyframes carrusel{
+
+	from{
+		right: 0%;
+	}
+
+	25%{
+		right: 80%
+	}
+
+	50%{
+		right: 160%
+	}
+
+	75%{
+		right: 240%
+	}
+
+	to{
+		right: 300%
+	}
+
+}
+
+
+.imgper{
+	height: 800px;
+	width: 1200px;
+
+}
+
+.felemento{
+	height: 800px;
+	width: 500px;
+}
+
+
+/* Contacto con Bootstrap */
+
+.container{
+	color: white;
+}

@@ -1,0 +1,41 @@
+/* ARMAS: FLEX-BOX */
+
+.flexbox{
+	width: 100%;
+	height: 150px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.flexbox__foto{
+	width: 30%;
+	height: 50px;
+
+	
+}
+
+.flexbox__arma{
+	width: 30%;
+	height: 50px;
+	color: white;
+	font-size: 25px;
+	font-family: 'Andika New Basic', sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+.flexbox__desc{
+	width: 30%;
+	height: 125px;
+	color: white;
+	font-size: 15px;
+	font-family: 'Andika New Basic', sans-serif;
+	font-weight: bold;
+	
+
+}
+

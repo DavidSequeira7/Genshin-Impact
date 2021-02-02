@@ -1,0 +1,90 @@
+/* FOOTER GENERAL */
+
+.container-full{
+	width: 100%;
+	margin:auto;
+	padding: 15px;
+
+}
+
+.container-body{
+	display: flex;
+
+}
+
+.colum1{
+	max-width: 900px
+
+}
+
+.colum1 h2{
+	font-size: 22px;
+}
+
+.colum1 label{
+	font-size: 16px;
+	color: $bg-color-pie;
+}
+
+.colum2{
+	max-width: 300px;
+}
+
+.colum2 h2{
+	font-size: 22px;
+}
+
+.colum2 .fila{
+	margin-top: 5px;
+	display: flex;
+}
+
+.colum2 label{
+	font-size: 16px;
+	color: $bg-color-pie;
+}
+
+
+.fila img{
+	width: 27px;
+	height: 27px;
+}
+
+.fila label{
+	margin-left: 10px;
+}
+
+.colum3{
+	max-width: 100px;
+}
+
+.colum3 h2{
+	font-size: 22px;
+}
+
+.colum3 img{
+	width: 300px;
+	height: 100px;
+	margin-top: 30px;
+	margin-left: 70px;
+}
+
+.container-footer{
+	width: 1499px;
+	height: 20px;
+	background: #101010;
+	display: flex;
+	padding: 10px;
+	justify-content: space-between;
+
+}
+
+.copyright{
+	color: $bg-color-pie;
+	margin-left: 15px;
+}
+
+.terminos{
+	color: $bg-color-pie;
+	margin-right: 15px;
+}

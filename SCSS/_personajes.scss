@@ -1,0 +1,49 @@
+/* PERSONAJES */
+
+.carrusel{
+	width: 600px;
+	height: 1200px;
+	display: grid;
+	grid-template-rows: 200px;
+	grid-template-columns: 80% 80% 80% 80% 80%;
+	animation: carrusel 10s infinite;
+	position: relative;
+	overflow-wrap: hidden;
+}
+
+@keyframes carrusel{
+
+	from{
+		right: 0%;
+	}
+
+	25%{
+		right: 80%
+	}
+
+	50%{
+		right: 160%
+	}
+
+	75%{
+		right: 240%
+	}
+
+	to{
+		right: 300%
+	}
+
+}
+
+
+.imgper{
+	height: 800px;
+	width: 1200px;
+
+}
+
+.felemento{
+	height: 800px;
+	width: 500px;
+}
+
